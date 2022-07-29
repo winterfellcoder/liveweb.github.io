@@ -1,0 +1,301 @@
+@media screen and (max-width: 1300px) {
+    /* ====== ======>> Features Section <<====== ====== */
+    main .features .section_content {
+        row-gap: 8rem;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    main .features .section_content .box:nth-child(2) .card {
+        transform: translateY(5rem);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header nav .navList ul li {
+        padding: .5rem 1.8rem;
+    }
+
+    main .features::before {
+        filter: blur(1rem);
+    }
+
+    main .features::after {
+        bottom: 0;
+        filter: blur(1rem);
+    }
+
+    /* ====== ======>> Sign-Up Section <<====== ====== */
+    main .signup .section_content {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    /* ====== ======>> Header/Navbar Section <<====== ====== */
+    header nav .logo {
+        margin-left: 2.5rem;
+    }
+
+    header nav .navBtn {
+        margin-right: 2.5rem;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    main .home .left_content h1 {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    main section .section_header {
+        padding-top: 5rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 8px;
+    }
+
+    /* ====== ======>> Section Css <<====== ====== */
+    main section .section_content {
+        width: 100%;
+    }
+
+    main section {
+        padding: 7rem 2.5rem 10rem;
+    }
+
+    /* ====== ======>> Home Section Css <<====== ====== */
+    main .home .left_content {
+        height: 80vh;
+    }
+
+    /* ====== ======>> Menu Section Css <<====== ====== */
+    main .menu .section_content {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 340px) {
+        main .menu .section_content {
+            row-gap: 5rem;
+        }
+
+        main .menu .section_content .card {
+            width: 40rem;
+            height: 30rem;
+        }
+
+        main .menu .section_content .card .box .menuItem {
+            height: 18rem;
+        }
+
+        main .menu .section_content .card .box h1 {
+            top: 20rem;
+            left: 2.5rem;
+            font-size: 2rem;
+        }
+
+        main .menu .section_content .card .box .rating {
+            top: 24rem;
+            left: 2.2rem;
+        }
+
+        main .menu .section_content .card .box .rating .ri {
+            font-size: 2.2rem;
+        }
+
+        main .menu .section_content .card .box .price {
+            top: 20rem;
+            right: 5rem;
+            font-size: 2.2rem;
+            font-weight: 400;
+        }
+
+        main .menu .section_content .card .box .addToCart {
+            width: 6rem;
+            height: 6rem;
+        }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    /* ====== ======>> Header/Navbar Section <<====== ====== */
+    header nav .logo {
+        z-index: 1;
+    }
+
+    header nav .navList {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 15rem;
+        background: #fff;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+        transform: translateX(-100%);
+        transition: .3s;
+    }
+
+    header nav .navList.activeNavbar {
+        transform: translateX(0);
+    }
+
+    header nav .navList ul li {
+        display: block;
+        padding: .5rem 2.5rem;
+    }
+
+    header nav .navList ul li a {
+        font-size: 2.2rem;
+    }
+
+    /* Active Indicatior */
+    header nav .navList ul li a.active::before {
+        top: 0;
+        bottom: 0;
+        left: -14rem;
+        margin: auto;
+    }
+
+    header nav .navBtn {
+        display: none;
+    }
+
+    header nav .navToggleBtn {
+        margin-right: 5rem;
+        display: flex;
+        align-items: center; 
+        padding: .8rem;
+        background: #A7B2BB;
+        border-radius: .6rem;
+        box-shadow: 5px 5px 5px rgba(16, 16, 16, .1),
+                    10px 10px 10px rgba(16, 16, 16, .1); 
+    }
+
+    header nav .navToggleBtn .ri {
+        font-size: 3.2rem;
+        color: #fff;
+        text-shadow: 5px 5px 5px rgba(16, 16, 16, .1),
+                     10px 10px 10px rgba(16, 16, 16, .1);
+        transition: .3s;
+    }
+
+    header nav .navToggleBtn:hover .ri {
+        transform: scale(1.2) rotate(180deg);
+    }
+
+    /* ====== ======>> Home Section <<====== ====== */
+    main .home {
+        grid-template-columns: 1fr;
+    }
+
+    main .home .left_content {
+        justify-content: center;
+    }
+
+    main .home .right_content {
+        align-items: flex-start;
+    }
+
+    main .home .right_content img {
+        margin: 0;
+    }
+
+    /* ====== ======>> Section Css <<====== ====== */
+    main section .section_header p {
+        max-width: 100%;    
+    }
+
+    /* ====== ======>> Features Section <<====== ====== */
+    main .features .section_content {
+        row-gap: 8rem;
+    }
+
+    /* ====== ======>> Service Section <<====== ====== */
+    main .service {
+        grid-template-columns: 1fr;
+    }
+
+    main .service .content {
+        align-items: flex-start;
+    }
+
+    /* ====== ======>> Menu Section <<====== ====== */
+    main .menu .section_content { 
+        width: 100%; 
+    } 
+
+    main .menu .section_content .card {
+        width: 40rem;
+        height: 30rem;
+    }
+
+    main .menu .section_content .card .box .menuItem {
+        height: 18rem;
+    }
+
+    main .menu .section_content .card .box h1 {
+        top: 20rem;
+        left: 2.5rem;
+        font-size: 2rem;
+    }
+
+    main .menu .section_content .card .box .rating {
+        top: 24rem;
+        left: 2.2rem;
+    }
+
+    main .menu .section_content .card .box .rating .ri {
+        font-size: 2.2rem;
+    }
+
+    main .menu .section_content .card .box .price {
+        top: 20rem;
+        right: 5rem;
+        font-size: 2.2rem;
+        font-weight: 400;
+    }
+
+    main .menu .section_content .card .box .addToCart {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    /* ====== ======>> Clinet Section <<====== ====== */
+    main .client .section_content {
+        width: 100%; 
+    }
+
+    main .client .section_content .swiper {
+        padding: 5rem 0;
+    }
+
+    /* ====== ======>> Sign-Up Section <<====== ====== */
+    main .signup {
+        /* box-shadow: none; */
+        width: 60%; 
+        box-shadow: 0 0 25px rgba(0,0,0,.08); 
+        border-radius: 5rem 0 5rem 0; 
+    }
+
+    main .signup .section_content {
+        text-align: center; 
+    }
+
+    /* ====== ======>> Footer <<====== ====== */
+    footer .footer_content .brand .social_contact ul li {
+        margin: 1rem;
+    }
+}
